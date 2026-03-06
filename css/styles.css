@@ -9,7 +9,8 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: rgb(15 30 35);
+  /* background-color: rgb(15 30 35); */ 
+   background-color: #0f1b26;
   color: #ffffff;
 }
 
@@ -20,6 +21,11 @@ color: #94A3B8;
 
 /* ------------- Navbar styles ----------------------*/
 
+/* Common navbar background style */
+.navbar {
+background-color: #0f1b26f3;
+}
+
 /* home page navbar */
 .home-navbar {
   background-image: url("../images/background-image.jpg");
@@ -27,10 +33,7 @@ color: #94A3B8;
   background-position: center top;
   width: 100%;
 }
-/* about page navbar */
-.about-navbar {
-  background-color: rgb(15, 30, 35);
-}
+
 .navbar-toggler {
   border-color: #1fc3f9;
 }
@@ -81,6 +84,7 @@ color: #94A3B8;
 
 .hero-description {
   color: #94a3b8;
+  font-size: 1.0625rem;
 }
 .view-button {
   color: #000;
@@ -101,9 +105,7 @@ color: #94A3B8;
 
 
 /* ---------------------- Service page styles ---------------------------*/
-.service-navbar {
-  background-color: #0f1b26f3;
-}
+
 .service-section {
   background-color: #0f1b26;
 }
@@ -151,6 +153,21 @@ color: #94A3B8;
 
 /* ---------------------- Service page styles ends ---------------------- */
 
+
+/* ----------------------- Contact Page style ---------------------------- */
+
+.highlight-word{
+ color: #1fc3f9;
+}
+
+.email-icon {
+  background-color: #102f38;
+}
+.email-icon i {
+  color: #1fc3f9;
+}
+
+/* ----------------------- Contact Page style ends ---------------------------- */
 /* Footer section style */
 footer {
   background-color: rgb(30 41 59);
