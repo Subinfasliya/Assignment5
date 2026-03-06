@@ -26,7 +26,7 @@
 <body>
     <!-- Header section -->
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top contact-navbar">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
                 <a class="navbar-brand fs-4 fw-bold text-light" href="#">
                     <img src="images/logo.png" alt="Website Logo" width="34" class="d-inline-block align-text-top" />
@@ -65,11 +65,12 @@
 
     <!-- Main section -->
     <main>
-        <section class="contact-section">
-            <div class="container">
-                <div class="row g-5">
+        <section class="py-5">
+           
+            <div class="container py-5">
+                <div class="row gy-5 gx-lg-5">
                     <!-- Left section -->
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-md-12 col-lg-6">
                         <h2 class="display-5 fw-bold mb-4">
                             Let's build something
                             <span class="highlight-word">extraordinary</span>.
@@ -80,7 +81,7 @@
                             a message away.
                         </p>
                         <!-- Email -->
-                        <div class="d-flex flex-wrap gap-2">
+                        <div class="d-flex flex-wrap gap-3">
                             <!-- Email icon  -->
                             <div class="email-icon p-3 d-inline-flex align-items-center rounded-3">
                                 <i class="fa-regular fa-envelope fs-4"></i>
@@ -92,7 +93,7 @@
                             </div>
                         </div>
                         <!-- Connect Social links -->
-                        <div class="d-flex flex-wrap gap-2 mt-4">
+                        <div class="d-flex flex-wrap gap-3 mt-4">
                             <!-- connect icon (share icon)  -->
                             <div class="email-icon p-3 d-inline-flex align-items-center rounded-3">
                                 <i class="fa-solid fa-share-nodes fs-4"></i>
@@ -125,17 +126,18 @@
                         </div>
 
                         <!-- Location map -->
-                        <div class="py-5">
+                        <div class="py-5 text-center text-md-start">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7838.381008522566!2d75.95307252159127!3d10.796716689561373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1772817789354!5m2!1sen!2sin"
+                                width="100%"
                                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                                 class="rounded-4 location-map"></iframe>
                         </div>
                     </div>
                     <!-- Right section -->
-                    <div class="col-12 col-lg-6">
-                        <div class="contact-container p-5 rounded-4">
-                            <form action="#">
+                    <div class="col-12 col-md-12 col-lg-6 ">
+
+                            <form action="#" class="contact-container p-5 rounded-4">
                                 <!-- text input for user name -->
                                 <div class="mb-3">
                                     <label for="name" class="form-label">Full Name</label>
@@ -159,10 +161,11 @@
                                     <input type="submit" value="Submit Message" class="btn submit-button w-100 py-3 fw-bold">
                                 </div>
                             </form>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
+           
         </section>
     </main>
     <!-- Main section ends-->
