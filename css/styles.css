@@ -1,0 +1,194 @@
+/* Google fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: rgb(15 30 35);
+  color: #ffffff;
+}
+
+/* Common style */
+p {
+color: #94A3B8;
+}
+
+/* ------------- Navbar styles ----------------------*/
+
+/* home page navbar */
+.home-navbar {
+  background-image: url("../images/background-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 100%;
+}
+/* about page navbar */
+.about-navbar {
+  background-color: rgb(15, 30, 35);
+}
+.navbar-toggler {
+  border-color: #1fc3f9;
+}
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem #1fc3f9e6;
+}
+
+.navbar-toggler-icon {
+  background-image: url("svg xmlns=http://www.w3.org/2000/svg viewBox=0 0 640 640><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d=M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z/>svg");
+}
+
+.nav-item:hover {
+  font-weight: 600;
+}
+/* ------------- Navbar styles ends ----------------------*/
+
+/* ------------- Hero Section styles ----------------------*/
+
+.hero-section {
+  background-image: url("../images/background-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  width: 100%;
+}
+
+.hero-container {
+  height: 100vh;
+  max-height: 100%;
+}
+
+.badge-hero {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  color: #1fc3f9;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #1fc3f91a;
+  border: 1px solid #1fc3f933;
+  border-radius: 40px;
+  padding: 4px 10px;
+}
+
+.hero-role {
+  color: #1fc3f9;
+}
+
+.hero-description {
+  color: #94a3b8;
+}
+.view-button {
+  color: #000;
+  background-color: #1fc3f9;
+}
+
+/* ------------- Hero section styles ends ----------------------*/
+
+/* ------------- about page styles ----------------------*/
+
+.about-image {
+  width: 420px;
+  max-width: 100%;
+  box-shadow: -1px 10px 45px 5px rgba(31, 195, 249, 0.4);
+}
+
+/* ------------- about page styles ends ----------------------*/
+
+
+/* ---------------------- Service page styles ---------------------------*/
+.service-navbar {
+  background-color: #0f1b26f3;
+}
+.service-section {
+  background-color: #0f1b26;
+}
+.service-subtitle {
+  color: #1fc3f9;
+  letter-spacing: 0.12em;
+}
+.service-icons {
+  display: inline-block;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #1fc3f91a;
+  color: #1fc3f9;
+}
+.service-image {
+ box-shadow: -1px 10px 45px 5px #1fc3f966;
+}
+
+.service-card {
+  background-color:#0f1e23;
+  border: 0.05rem solid #2f3031;
+}
+
+/* service card bullets fontawesome css style class */
+.fa-ul li {
+ color: #64748b;
+ font-size: 0.875rem;
+}
+
+.fa-li i {
+ color: #1fc3f9;
+ font-size: 0.8em;
+}
+
+/* Service card hover effect */
+.service-card:hover{
+  box-shadow: -1px 2px 20px 2px rgba(31, 195, 249, 0.4);
+  
+}
+.service-card:hover .service-icons {
+  background-color: #1fc3f9;
+  color: #000;
+}
+
+
+/* ---------------------- Service page styles ends ---------------------- */
+
+/* Footer section style */
+footer {
+  background-color: rgb(30 41 59);
+}
+
+footer .stat-number {
+  font-weight: 900;
+}
+
+footer i {
+  color: #94a3b8;
+  cursor: pointer;
+}
+
+footer i:hover {
+  color: #1fc3f9;
+}
+
+/* Custom Media Query */
+@media (max-width: 991px) {
+  /* Navbar in Home page */
+  /* .home-navbar {
+  background-image: url("../images/header-background-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  object-fit: cover;
+  width: 100%;
+} */
+
+  /* .navbar-collapse {
+  margin-top: 10px;
+  background-color: #0467899f;
+  padding: 20px; 
+  border-radius: 5px;
+} */
+
+  .hero-container {
+    height: 75vh;
+    max-height: 100%;
+  }
+}
