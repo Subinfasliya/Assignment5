@@ -199,6 +199,13 @@ background-color: #0f1b26f3;
    color: #fff;
    box-shadow: 0 0 0.2rem rgb(31, 195, 249);
 }
+.submit-button{
+  background-color: #1fc3f9;
+}
+.submit-button:hover{
+  background-color: #058dba;
+  color: #fff;
+}
 /* ----------------------- Contact Page style ends ---------------------------- */
 /* Footer section style */
 footer {
