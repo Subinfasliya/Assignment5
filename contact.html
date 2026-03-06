@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -26,7 +26,7 @@
 <body>
     <!-- Header section -->
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top  contact-navbar">
+        <nav class="navbar navbar-expand-lg fixed-top contact-navbar">
             <div class="container">
                 <a class="navbar-brand fs-4 fw-bold text-light" href="#">
                     <img src="images/logo.png" alt="Website Logo" width="34" class="d-inline-block align-text-top" />
@@ -34,7 +34,7 @@
                 </a>
 
                 <!-- Hamburger button -->
-                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent">
                     <i class="fa-solid fa-bars text-light fs-4 p-1"></i>
                 </button>
@@ -46,11 +46,11 @@
                             <a class="nav-link text-light" aria-current="page" href="index.html">Home</a>
                         </li>
 
-                        <li class="nav-item ">
-                            <a class="nav-link  text-light" href="about.html">About</a>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="about.html">About</a>
                         </li>
-                        <li class="nav-item ">
-                            <a class="nav-link text-light " href="service.html">Service</a>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="service.html">Service</a>
                         </li>
 
                         <li class="nav-item nav-underline">
@@ -65,48 +65,105 @@
 
     <!-- Main section -->
     <main>
-        <section class="py-5 service-section">
-
-            <div class="container py-5">
-                <div class="row">
+        <section class="contact-section">
+            <div class="container">
+                <div class="row g-5">
+                    <!-- Left section -->
                     <div class="col-6">
-                        <h2 class="display-5 fw-bold mb-4">Let's build something <span
-                                class="highlight-word">extraordinary</span>.</h2>
-                        <p class="lead">Have a vision for a web application? Whether you're looking for a full-stack
-                            developer or
-                            just want to chat about tech, I'm just a message away.</p>
-
-                        <div class="d-flex flex-wrap gap-2 ">
-
-                            <div class="email-icon p-3 d-inline-flex rounded-3">
+                        <h2 class="display-5 fw-bold mb-4">
+                            Let's build something
+                            <span class="highlight-word">extraordinary</span>.
+                        </h2>
+                        <p class="lead">
+                            Have a vision for a web application? Whether you're looking for
+                            a full-stack developer or just want to chat about tech, I'm just
+                            a message away.
+                        </p>
+                        <!-- Email -->
+                        <div class="d-flex flex-wrap gap-2">
+                            <!-- Email icon  -->
+                            <div class="email-icon p-3 d-inline-flex align-items-center rounded-3">
                                 <i class="fa-regular fa-envelope fs-4"></i>
-
                             </div>
-
-                            <div class="d-flex flex-direction-column">
+                            <!-- Email text -->
+                            <div class="d-flex flex-column justify-content-center">
                                 <p class="fw-bold mb-0">Email Me</p>
-                                <p>hello@developerportfolio.com</p>
+                                <p class="mb-0">hello@developerportfolio.com</p>
                             </div>
-
-
-
+                        </div>
+                        <!-- Connect Social links -->
+                        <div class="d-flex flex-wrap gap-2 mt-4">
+                            <!-- connect icon (share icon)  -->
+                            <div class="email-icon p-3 d-inline-flex align-items-center rounded-3">
+                                <i class="fa-solid fa-share-nodes fs-4"></i>
+                            </div>
+                            <!-- connect text -->
+                            <div class="d-flex flex-column justify-content-center">
+                                <p class="fw-bold mb-3">Connect</p>
+                                <!-- Social media links -->
+                                <div class="row g-3">
+                                    <div class="col-4">
+                                        <a class="text-decoration-none p-2 border rounded-circle connect-links"
+                                            href="#">
+                                            <i class="fa-brands fa-github fa-lg"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="text-decoration-none p-2 border rounded-circle connect-links"
+                                            href="#">
+                                            <i class="fa-brands fa-linkedin fa-lg"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="text-decoration-none p-2 border rounded-circle connect-links"
+                                            href="#">
+                                            <i class="fa-brands fa-twitter fa-lg"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-
-
+                        <!-- Location map -->
+                        <div class="py-5">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7838.381008522566!2d75.95307252159127!3d10.796716689561373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1772817789354!5m2!1sen!2sin"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                class="rounded-4 location-map"></iframe>
+                        </div>
                     </div>
-                    <div class="col-6"></div>
+                    <!-- Right section -->
+                    <div class="col-6">
+                        <div class="contact-container p-5 rounded-4">
+                            <form action="#">
+                                <!-- text input for user name -->
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" id="name" name="name" class="form-control" required minlength="3"
+                                        maxlength="30" placeholder="Jack" />
+                                </div>
+                                <!-- email input for user email -->
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" id="email" name="email" class="form-control" required
+                                        placeholder="jack@gmail.com" />
+                                </div>
+                                <!-- textarea input for message -->
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea name="message" id="message" class="form-control" rows="5"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </section>
-
     </main>
     <!-- Main section ends-->
 
     <!-- Footer section -->
     <footer class="pt-5">
-
         <div class="container">
             <div class="row text-center footer-firstsection mb-5">
                 <div class="col-6 col-md-3 mb-5 mb-md-0">
@@ -129,7 +186,7 @@
         </div>
         <!-- Border line -->
         <div class="text-light">
-            <hr>
+            <hr />
         </div>
         <div class="container">
             <div class="row py-5">
@@ -143,20 +200,21 @@
                 <div class="col-12 col-sm-6 col-md-2 text-center text-sm-end">
                     <div class="row">
                         <div class="col-4">
-                            <i class="fa-brands fa-github fa-xl "></i>
+                            <i class="fa-brands fa-github fa-xl"></i>
                         </div>
                         <div class="col-4">
-                            <i class="fa-brands fa-github fa-xl "></i>
+                            <i class="fa-brands fa-github fa-xl"></i>
                         </div>
                         <div class="col-4">
-                            <i class="fa-brands fa-github fa-xl "></i>
+                            <i class="fa-brands fa-github fa-xl"></i>
                         </div>
-
                     </div>
                 </div>
                 <!-- Copyright text -->
                 <div class="mt-5 small text-secondary text-center">
-                    <p>© 2024 DevPortfolio. All rights reserved. Designed for excellence.</p>
+                    <p>
+                        © 2024 DevPortfolio. All rights reserved. Designed for excellence.
+                    </p>
                 </div>
             </div>
         </div>

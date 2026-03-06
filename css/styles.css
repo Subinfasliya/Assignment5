@@ -156,6 +156,10 @@ background-color: #0f1b26f3;
 
 /* ----------------------- Contact Page style ---------------------------- */
 
+.contact-section { 
+ padding: 150px 0;
+}
+
 .highlight-word{
  color: #1fc3f9;
 }
@@ -166,7 +170,35 @@ background-color: #0f1b26f3;
 .email-icon i {
   color: #1fc3f9;
 }
+.connect-links {
+  color: #fff;
+}
+.connect-links:hover {
+  color: #1fc3f9;
+}
+.location-map{
+  width: 600px;
+  height: 300px;
+  max-width: 100%;
+  
+}
 
+.contact-container {
+  background-color:rgb(30 41 59 / 30%)
+}
+.form-control {
+  background-color: #0f1b26;
+  color: #fff;
+  border-color: #334155;
+  font-size: 1rem;
+  padding: 10px;
+}
+.form-control:focus{
+  border-color: rgb(31, 195, 249);
+   background-color: #0f1b26;
+   color: #fff;
+   box-shadow: 0 0 0.2rem rgb(31, 195, 249);
+}
 /* ----------------------- Contact Page style ends ---------------------------- */
 /* Footer section style */
 footer {
