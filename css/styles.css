@@ -7,23 +7,29 @@
   box-sizing: border-box;
 }
 
+/* --------------- Common style --------------------- */
+
 body {
   font-family: "Inter", sans-serif;
-  /* background-color: rgb(15 30 35); */ 
-   background-color: #0f1b26;
+  background-color: #0f1b26;
   color: #ffffff;
 }
 
-/* Common style */
 p {
-color: #94A3B8;
+  color: #94a3b8;
+}
+
+.contact-section,
+.about-section,
+.service-section {
+  padding: 100px 0;
 }
 
 /* ------------- Navbar styles ----------------------*/
 
 /* Common navbar background style */
 .navbar {
-background-color: #0f1b26f3;
+  background-color: #0f1b26f3;
 }
 
 /* home page navbar */
@@ -91,6 +97,17 @@ background-color: #0f1b26f3;
   background-color: #1fc3f9;
 }
 
+/* Project section */
+.project-card {
+  background-color: rgb(15, 30, 35);
+  border: 1px solid #058dba;
+ 
+  
+}
+.project-card:hover {
+  box-shadow: 0 0 0.35rem #058dba;
+  transition: 0.3s ease;
+}
 /* ------------- Hero section styles ends ----------------------*/
 
 /* ------------- about page styles ----------------------*/
@@ -102,7 +119,6 @@ background-color: #0f1b26f3;
 }
 
 /* ------------- about page styles ends ----------------------*/
-
 
 /* ---------------------- Service page styles ---------------------------*/
 
@@ -121,47 +137,40 @@ background-color: #0f1b26f3;
   color: #1fc3f9;
 }
 .service-image {
- box-shadow: -1px 10px 45px 5px #1fc3f966;
+  box-shadow: -1px 10px 45px 5px #1fc3f966;
 }
 
 .service-card {
-  background-color:#0f1e23;
+  background-color: #0f1e23;
   border: 0.05rem solid #2f3031;
 }
 
 /* service card bullets fontawesome css style class */
 .fa-ul li {
- color: #64748b;
- font-size: 0.875rem;
+  color: #64748b;
+  font-size: 0.875rem;
 }
 
 .fa-li i {
- color: #1fc3f9;
- font-size: 0.8em;
+  color: #1fc3f9;
+  font-size: 0.8em;
 }
 
 /* Service card hover effect */
-.service-card:hover{
+.service-card:hover {
   box-shadow: -1px 2px 20px 2px rgba(31, 195, 249, 0.4);
-  
 }
 .service-card:hover .service-icons {
   background-color: #1fc3f9;
   color: #000;
 }
 
-
 /* ---------------------- Service page styles ends ---------------------- */
-
 
 /* ----------------------- Contact Page style ---------------------------- */
 
-/* .contact-section { 
- padding: 150px 0;
-} */
-
-.highlight-word{
- color: #1fc3f9;
+.highlight-word {
+  color: #1fc3f9;
 }
 
 .email-icon {
@@ -176,14 +185,13 @@ background-color: #0f1b26f3;
 .connect-links:hover {
   color: #1fc3f9;
 }
-.location-map{
+.location-map {
   width: 100%;
   height: 300px;
-  
 }
 
 .contact-container {
-  background-color:rgb(30 41 59 / 30%)
+  background-color: rgb(30 41 59 / 30%);
 }
 .form-control {
   background-color: #0f1b26;
@@ -192,16 +200,16 @@ background-color: #0f1b26f3;
   font-size: 1rem;
   padding: 10px;
 }
-.form-control:focus{
+.form-control:focus {
   border-color: rgb(31, 195, 249);
-   background-color: #0f1b26;
-   color: #fff;
-   box-shadow: 0 0 0.2rem rgb(31, 195, 249);
+  background-color: #0f1b26;
+  color: #fff;
+  box-shadow: 0 0 0.2rem rgb(31, 195, 249);
 }
-.submit-button{
+.submit-button {
   background-color: #1fc3f9;
 }
-.submit-button:hover{
+.submit-button:hover {
   background-color: #058dba;
   color: #fff;
 }
